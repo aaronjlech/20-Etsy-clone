@@ -14,7 +14,6 @@ const ViewBuilder = Backbone.View.extend({
    },
 
    routeToItem: function(evt){
-      console.log(evt.currentTarget.id)
 
       window.location.hash = "details/" +evt.currentTarget.id
 

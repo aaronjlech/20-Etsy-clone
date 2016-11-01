@@ -6,7 +6,7 @@ var _homePageTemp = function(collData){
 
       // ***** SET ID DYNAMICALLY FOR EACH ETSY ITEM ******
       homeStr += `
-                  <div class="col-xs-4 thumbnail item-card" id="${mdl.get('category_id')}">
+                  <div class="col-xs-4 thumbnail item-card" id="${mdl.get('listing_id')}">
                      <img src="${mdl.get('Images')[0].url_170x135}">
                      <p>${mdl.get('title').slice(0, 40)}${mdl.get('title').length > 40 ? '...' : ''}</p>
                   </div>
@@ -20,14 +20,26 @@ var _homePageTemp = function(collData){
 }
 
 
-var _singleItemTemp = function(mdlData){
-   console.log(mdlData)
+var _singleItemTemp = function(singleData){
+
+
+
+
+   // singleStr = `
+   // <div class="col-xs-4 thumbnail item-card" id="${mdl.get('category_id')}">
+   //    <img src="${mdl.get('Images')[0].url_170x135}">
+   //    <p>${mdl.get('title').slice(0, 40)}${mdl.get('title').length > 40 ? '...' : ''}</p>
+   // </div>`
+   //
+   //
+   // return singleStr
+
 }
 
 
 module.exports = {
 
-   _homePageTemp: _homePageTemp,
-   _singleItemTemp: _singleItemTemp,
+   _homePageTemp,
+   _singleItemTemp
 
 }

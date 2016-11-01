@@ -37,20 +37,14 @@ const AppRouter = Backbone.Router.extend({
 
 
 	showSingleItem: function(idNum){
-
+		console.log(idNum)
 		var etsyItem = new EtsyCollection(idNum)
 
 		etsyItem.fetch().then(function(){
 
+			var singleInst = new ViewBuilder()
 
-			var singlePageItem = new ViewBuilder()
-
-			singlePageItem.render(etsyItem, _singleItemTemp)
-
-
-
-
-
+			singleInst.render(etsyItem, _homePageTemp)
 		})
 
 
