@@ -1,17 +1,63 @@
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+$etsyOrange: #F56400;
 * {
 	font-family: Helvetica, Arial, sans-serif;
 	box-sizing: border-box;
 }
+body{
+
+	background: #F5F5F1;
+}
 
 .etsy-nav{
+	.etsy-head{
+		a{
 
-	a .etsy-logo{
+			h2{
+				color: $etsyOrange;
+			font-family: 'Lora', serif;
+			}
 
-		width: 10%;
+			:hover{
+				text-decoration-color: yellow;
+			}
+
+		}
+	}
+	position: absolute;
+	width: 100%;
+	background: #FFF;
+	border-top: 1px solid #AAA;
+	border-bottom: 1px solid #AAA;
+	box-shadow: 0px 1px 4px rgba(0, 0, 0, .3);
+
+	a{
+		border-bottom: 1px solid rgba(0, 0, 0, 0);
+		:hover{
+			color:black;
+			border-bottom: 1px solid $etsyOrange;
+		}
+
+		li{
+		background: none;
+		color: #777;
+		margin-right: 5px;
+		display: inline-block;
+
+		}
+	}
+
 	}
 
 
+}
+.search-jumbo{
 
+	background: url('http://wallpapercave.com/wp/r51TAcX.jpg')center, center, no-repeat;
+	background-size: cover;
+	h3{
+		font-family: 'Lora', serif;
+	}
 
 
 

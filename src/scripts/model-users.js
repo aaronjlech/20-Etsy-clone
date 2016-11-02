@@ -22,10 +22,10 @@ const EtsyCollection = Backbone.Collection.extend({
 
    },
 
-   initialize: function(rVal="active"){
+   initialize: function(rVal="active", catStr=""){
 
 
-      this.url = `https://openapi.etsy.com/v2/listings/${rVal}.js?includes=Images&api_key=azo1uvo4jt8ux8s9rmqocj3z&callback=?`
+      this.url = `https://openapi.etsy.com/v2/listings/${rVal}.js?includes=Images&api_key=azo1uvo4jt8ux8s9rmqocj3z&${catStr}&callback=?`
    },
 
 
